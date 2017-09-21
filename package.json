@@ -1,7 +1,12 @@
 {
-  "name": "senior_enrichment",
-  "version": "0.0.1",
-  "description": "A review time project",
+  "name": "davey_campus",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayfine/senior-enrichment.git"
+  },
+  "license": "ISC",
+  "description": "A review project",
   "main": "index.js",
   "scripts": {
     "test": "mocha **/*.test.js *.test.js",
@@ -11,13 +16,13 @@
   },
   "keywords": [
     "react",
-    "redux",
-    "skeleton"
+    "redux"
   ],
   "dependencies": {
     "body-parser": "^1.15.2",
     "chalk": "^1.1.3",
     "express": "^4.14.0",
+    "material-components-web": "^0.21.1",
     "pg": "^6.1.0",
     "pg-native": "^1.10.0",
     "react": "^15.3.2",
