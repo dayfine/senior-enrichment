@@ -1,0 +1,42 @@
+html {
+  font-size: 16px;
+}
+
+nav.mdc-tab-bar {
+  width: 100%;
+  background-color: #000;
+
+}
+
+nav.mdc-tab-bar>div {
+/*  max-width: 50%;*/
+  margin:auto;
+}
+
+span.addStudent {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+}
+
+span.addStudent > i.material-icons {
+  font-size: 2.125em;
+  color: #E03C8A;
+}
+
+nav.mdc-temporary-drawer__drawer {
+  font-size: 1.5em;
+}
+
+/*.studentList:before {
+  content: 'add_circle';
+  font-family: 'Material Icons';
+  font-size: 3em;
+  color: #E03C8A;
+  background: ;
+  display: block;
+  position: absolute;
+  top: 65px;
+  left: 35px;
+}
+*/

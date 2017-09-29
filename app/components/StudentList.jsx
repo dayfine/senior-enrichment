@@ -1,23 +1,22 @@
 import React, { Component } from 'react'
-import {MDCTemporaryDrawer, MDCTemporaryDrawerFoundation, util} from '@material/drawer'
-import {Link} from 'react-router-dom'
-import {connect} from 'react-redux'
+import { MDCTemporaryDrawer } from '@material/drawer'
+import { connect } from 'react-redux'
 
-class StudentList extends Component {
+class Sidebar extends Component {
   componentDidMount () {
-    const drawer = new MDCTemporaryDrawer(document.querySelector('.mdc-temporary-drawer'))
-    drawer.open = !!this.props.currentCampusId
+    const drawer = new MDCTemporaryDrawer(document.querySelector('.listDrawer'))
+    drawer.open = this.props.open
   }
 
   componentWillReceiveProps (nextProps) {
-    const drawer = new MDCTemporaryDrawer(document.querySelector('.mdc-temporary-drawer'))
-    drawer.open = !!nextProps.currentCampusId
+    const drawer = new MDCTemporaryDrawer(document.querySelector('.listDrawer'))
+    drawer.open = nextProps.open
   }
 
   render () {
     const students = this.props.students.filter(s => s.campusId === this.props.currentCampusId)
     return (
-      <aside className='mdc-temporary-drawer mdc-typography'>
+      <aside className='listDrawer mdc-temporary-drawer mdc-typography'>
         <nav className='mdc-temporary-drawer__drawer'>
           <header className='mdc-temporary-drawer__header'>
             <div className='mdc-temporary-drawer__header-content'>

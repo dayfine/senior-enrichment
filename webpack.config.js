@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const { resolve } = require('path')
 
@@ -20,9 +20,10 @@ module.exports = {
         include: resolve(__dirname, './app'),
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015']
+          presets: ['react', 'es2015', 'stage-2']
         }
-      }
+      },
+      { test: /\.css$/, loader: 'style-loader!css-loader' }
     ]
   }
-};
+}
